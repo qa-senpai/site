@@ -1,0 +1,411 @@
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+.header .logo img {
+  max-height: 52px;
+  margin-right: 18px;
+}
+
+.header .logo h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header .btn-getstarted,
+.header .btn-getstarted:focus {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 25px;
+  margin: 0 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.header .btn-getstarted:hover,
+.header .btn-getstarted:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+@media (max-width: 1200px) {
+  .header .logo {
+    order: 1;
+  }
+
+  .header .btn-getstarted {
+    order: 2;
+    margin: 0 15px 0 0;
+    padding: 6px 15px;
+  }
+
+  .header .navmenu {
+    order: 3;
+  }
+}
+
+.scrolled .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  transform: scale(0.9); /* Scale down the container to 75% */
+  transform-origin: top center;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header .logo img {
+  width: 150px;
+}
+
+/* Центрування контейнера */
+#verification .container {
+  max-width: 600px; /* Обмеження ширини */
+  margin: 0 auto; /* Центрування контейнера */
+  padding: 20px; /* Відступи всередині контейнера */
+  text-align: center; /* Центрування тексту */
+}
+
+/* Стилізація текстових полів */
+.input-field {
+  width: 100%; /* Заповнює доступну ширину */
+  max-width: 400px; /* Максимальна ширина поля */
+  margin: 0 auto 15px auto; /* Центрування і відступи знизу */
+  padding: 10px; /* Відступи всередині поля */
+  border: 1px solid #ccc; /* Сірий бордер */
+  border-radius: 5px; /* Згладжені кути */
+  font-size: 16px; /* Зручний розмір шрифту */
+  box-sizing: border-box; /* Врахування відступів у ширині */
+}
+
+.verification-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.verification-form h2 {
+  color: #027ac7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.verification-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.verification-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.verification-form small {
+  display: block;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.verify-btn {
+  background-color: #00a2ff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.verify-btn:hover {
+  background-color: #0078cc;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    transform: scale(1); /* Reset scale for smaller screens */
+    padding: 10px;
+  }
+
+  .verification-form {
+    padding: 20px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  transform: scale(0.9); /* Scale down the container to 75% */
+  transform-origin: top center;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header .logo img {
+  width: 150px;
+}
+
+.verification-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.verification-form h2 {
+  color: #027ac7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.verification-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.verification-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.verification-form small {
+  display: block;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.verify-btn {
+  background-color: #00a2ff;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.verify-btn:hover {
+  background-color: #0078cc;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Darker background with transparency */
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 30px; /* Increased padding */
+  border: 1px solid #888;
+  width: 400px; /* Increased modal width */
+  border-radius: 10px;
+  text-align: center;
+  position: relative; /* Relative position to align the close button */
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.close {
+  position: absolute; /* Absolute positioning to move the close button */
+  top: 5px; /* Higher positioning for the close button */
+  right: 20px; /* Adjusted distance from the right edge */
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Checkmark and Crossmark styles */
+.checkmark,
+.crossmark {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 20px;
+}
+
+.checkmark-circle,
+.crossmark-circle {
+  stroke-width: 2;
+  stroke: #73af55;
+  fill: none;
+  stroke-linecap: round;
+  animation: circleAnimation 0.5s ease-in-out;
+}
+
+.checkmark-check {
+  stroke-width: 2;
+  stroke: #73af55;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: checkmarkAnimation 0.5s 0.5s ease forwards;
+}
+
+.crossmark-circle {
+  stroke: #f44336;
+}
+
+.crossmark-cross {
+  stroke-width: 2;
+  stroke: #f44336;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: crossmarkAnimation 0.5s 0.5s ease forwards;
+}
+
+/* Animations */
+@keyframes circleAnimation {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes checkmarkAnimation {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes crossmarkAnimation {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Success modal styles */
+#successModal .modal-content {
+  border-color: #28a745;
+}
+
+/* Error modal styles */
+#errorModal .modal-content {
+  border-color: #dc3545;
+}
+
+/* Apply background to the entire body 
+body {
+  background-image: url("img/background.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+*/

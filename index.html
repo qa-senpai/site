@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>QA DOJO - головна</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+     .social-links {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px; 
+            font-size: 16px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        /* Кольори для іконок */
+        .social-links a .fa-youtube {
+            color: #FF0000;
+        }
+        .social-links a .fa-linkedin {
+            color: #0077b5;
+        }
+        .social-links a .fa-telegram {
+            color: #0088cc;
+        }
+      
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .notification {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #060806;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+        z-index: 1000;
+      }
+      .social-links {
+        display: flex;
+        gap: 20px;
+        font-size: 16px;
+      }
+      .social-links a {
+        text-decoration: none;
+        color: #333;
+      }
+      /* Кольори для іконок */
+      .youtube-icon {
+        color: #ff0000;
+      }
+      .linkedin-icon {
+        color: #0077b5;
+      }
+      .telegram-icon {
+        color: #0088cc;
+      }
+    </style>
+
+    <!-- Favicons -->
+    <link href="assets/img/qa-dojo-favicon.svg" rel="icon" />
+    <link href="assets/img/qa-dojo-favicon.svg" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <img src="assets/img/logo.svg" alt="" />
+          <h1 class="sitename">QA_DOJO</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a
+                href="
+              https://t.me/qa_senpai_dojo"
+                class="active"
+                >Записатись на курс<br
+              /></a>
+            </li>
+            <!-- <li><a href="courses.html">Отримати свій сертифікат</a></li> -->
+            <li><a href="certificate.html">Про сертифікати</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/qa-dojo-back.png" alt="" data-aos="fade-in" />
+
+        <div class="container">
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            QA DOJO<br />Автоматизація тестування
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="200">
+            навчаю тестувальників автоматизовувати їх роботу
+          </p>
+          <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="#courses" class="btn-get-started">мої курси</a>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-6 order-1 order-lg-2"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="video-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/MS1e-Ed0J1A?si=c7RO4hf44mPlogG3"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 order-2 order-lg-1 content"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3>про qa семпая</h3>
+              <p class="fst-italic">
+                Мене звати Паша Сафонов, займаюсь тестуванням і розробкою
+                автоматизованих тестів вже понад 10 років. Зараз виконую роль QA
+                Lead в компанії Sitecore. З 2019 року займаюсь навчанням
+                тестувальників, а у 2024 році нарешті систематизував свої знання
+                в автоматизації тестування і зробив свій авторський курс з
+                використаням Playwright і TypeScript.
+              </p>
+
+              <ul>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Веду канал QA семпай | автоматизація тестування </span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Співведучий подкасту QA Balachky</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Автор найкращого курсу з автоматизації тестування</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i>
+                  <span>Щасливий чоловік і багатодітний батько</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+       
+          <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+                <i class="fab fa-youtube" style="color: #ff0000;"></i>
+                <h3><a href="https://www.youtube.com/@qa_senpai" class="stretched-link">мій youtube канал</a></h3>
+            </div>
+        </div><!-- End Feature Item -->
+
+        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+                <i class="fab fa-youtube" style="color: #ff0000;"></i>
+                <h3><a href="https://www.youtube.com/@qa-balachky" class="stretched-link">наш подкаст</a></h3>
+            </div>
+        </div><!-- End Feature Item -->
+
+        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+                <i class="fab fa-telegram" style="color: #0088cc;"></i>
+                <h3><a href="https://www.t.me/qa_advice" class="stretched-link">мій тг канал</a></h3>
+            </div>
+        </div><!-- End Feature Item -->
+
+        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+                <i class="fab fa-linkedin" style="color: #0077b5;"></i>
+                <h3><a href="https://www.linkedin.com/in/safonovqa/" class="stretched-link">linkedIn</a></h3>
+            </div>
+        </div><!-- End Feature Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+      <!-- Courses Section -->
+      <section id="courses" class="courses section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>qa dojo</h2>
+          <p> КУРСИ</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="course-item">
+                <img
+                  src="assets/img/pw-ts-e2e-course.png"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <div class="course-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <p class="category">E2E</p>
+                    <p class="price">20 000 грн</p>
+                  </div>
+
+                  <h3>
+                    <a href="details-e2e.html"
+                      >автоматизація тестування з Playwright і TypeScript</a
+                    >
+                  </h3>
+                  <p class="description">
+                    Курс для тих хто хоче прокачати себе в області E2E автоматизації
+                    з використанням Playwright і TypeScript
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Course Item-->
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="course-item">
+                <img
+                  src="assets/img/pw-ts-api-course-wip.png"
+                  class="img-fluid"
+                  alt="..."
+                />
+                <div class="course-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <p class="category">API</p>
+                    <p class="price">10 000 грн</p>
+                  </div>
+
+                  <h3>
+                    <a href="details-e2e.html"
+                      >автоматизація тестування API</a
+                    >
+                  </h3>
+                  <p class="description">
+                    Будемо вчитись автоматизовувати API тести за допомогою Postman і Playwright.
+                    Пройдемо основи тестування під навантаженням.
+                    Добре підходить для новачків в автоматизації тестування.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Course Item-->
+
+            <!-- End Course Item-->
+          </div>
+        </div>
+      </section>
+      <!-- /Courses Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Контакти:</h4>
+              <div id="notification" class="notification"></div>
+              <p>
+                <strong>Email:</strong>
+                <a href="javascript:void(0);" onclick="copyEmail()"
+                  >qa.automation.dojo@gmail.com</a
+                >
+              </p>
+              <p>
+                <strong>Telegram:</strong>
+                <a href="https://t.me/qa_senpai_dojo" target="_blank"
+                  >@qa_senpai_dojo</a
+                >
+              </p>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Мої друзі:</h4>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/@HOTtesting">
+                        <i class="fab fa-youtube" style="color: #ff0000; margin-right: 5px;"></i>
+                        HOT Testing
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@QAClubLviv">
+                        <i class="fab fa-youtube" style="color: #ff0000; margin-right: 5px;"></i>
+                        QA Club Lviv
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@from_a_to_qa">
+                        <i class="fab fa-youtube" style="color: #ff0000; margin-right: 5px;"></i>
+                        From A to QA
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@TestingMinutes">
+                        <i class="fab fa-youtube" style="color: #ff0000; margin-right: 5px;"></i>
+                        Подкаст Testing Minutes
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/certificate-verification-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+      function copyEmail() {
+        const email = "qa.automation.dojo@gmail.com";
+        navigator.clipboard.writeText(email).then(
+          () => {
+            showNotification("скопійовано: " + email);
+          },
+          () => {
+            showNotification("Не вдалося скопіювати email");
+          }
+        );
+      }
+
+      function showNotification(message) {
+        const notification = document.getElementById("notification");
+        notification.textContent = message;
+        notification.style.display = "block";
+
+        setTimeout(() => {
+          notification.style.display = "none";
+        }, 3000); 
+      }
+    </script>
+  </body>
+</html>
